@@ -1,5 +1,0 @@
-remote_theme: "mmistakes/minimal-mistakes"
-markdown: kramdown
-
-permalink: /blog/:year/:month/:day/:title
-
