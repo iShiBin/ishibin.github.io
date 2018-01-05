@@ -1,5 +1,4 @@
-theme: jekyll-theme-midnight
-name: Hank Quinlan, Horrible Cop
+remote_theme: "mmistakes/minimal-mistakes"
 markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title
