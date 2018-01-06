@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mindfully Learn"
+title                    : "Mindfully Live"
 title_separator          : "|"
 name                     : "Bin Shi"
 description              : "Bin's portfolio website."
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Bin Shi"
   avatar           : "/assets/images/bio.jpg"
-  bio              : "Graduate Student at Northeastern University"
+  bio              : "Graduate Student@NEU"
   location         : "Seattle, WA"
   email            : 
   uri              :
