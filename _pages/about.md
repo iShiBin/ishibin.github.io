@@ -1,8 +1,6 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "About me and this website."
-toc: true
 ---
 
 Welcome. Here is some introduction about me and this website.
