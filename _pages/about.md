@@ -4,7 +4,7 @@ title: "About"
 toc: true
 ---
 
-Welcome. Here is some introduction about me and this website.
+Here is some introduction about me and this website.
 
 ## Short Version
 
