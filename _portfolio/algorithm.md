@@ -9,7 +9,7 @@ sidebar:
   - title: "Learner"
     image: /assets/images/application-development/coding.png
     image_alt: "Coding"
-    text: "Coding is fun"
+    text: "I♥️Java & Python"
   - title: "Achievements"
     text: "Learned frequently used algorithms. Built my own data structure libary. Solve 300+ leetcode problems"
 ---
