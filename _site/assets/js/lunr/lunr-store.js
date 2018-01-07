@@ -9,8 +9,8 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/portfolio/programming/",
         "teaser":"http://localhost:4000/assets/images/application-development/inventory/inventory-ist.png"},{
-        "title": "Hank Quinlan, Horrible Cop, Launches Site",
-        "excerpt":"Well. Finally got around to putting this old website together. Neat thing about it - powered by Jekyll and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.","categories": [],
+        "title": "Launched My Website Today!",
+        "excerpt":"Finally, I can launch this website today after trying multiple approaches. (I will write another post about the process.) So as the first post, it is essential for me to be very clear why I started this website. Only after that, I can continually write articles.Why do I start this website?  It’s a portfolio of my school/side projects or other competitions I participate in.  Writing can help me to keep track of my thoughts on two of my favorite subjects: mindfulness and productivity.  It’s a simple approach to share my status and ideas without touching the overwhelming social media websites.  I hope my articles will also help others in some way.2018-01-06, Seattle","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/hank-quinlan-site-launched/",
-        "teaser":null}]
+        "url": "http://localhost:4000/mindfulness-site-launched/",
+        "teaser":"http://localhost:4000/assets/images/default-teaser.png"}]

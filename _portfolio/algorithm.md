@@ -17,7 +17,7 @@ sidebar:
 ## What I Learned
 
 - fundamentals of programmingdata structures and basic algorithms
-- common data structures 
+- common data structures
   - arrays, linked list, stacks and queues, hash tables and hash maps
   - trees, graphs,suffix trees
   - other specialized data structures

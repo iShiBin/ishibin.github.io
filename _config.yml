@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
@@ -16,13 +17,13 @@ description              : "feel, think, learn and share. Be happy!"
 url                      : "https://ishibin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ishibin/ishibin.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/default-teaser.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "shi_bin" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -88,7 +89,7 @@ author:
   avatar           : "/assets/images/bio.jpg"
   bio              : "Graduate Student"
   location         : "Seattle, WA"
-  email            : 
+  email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -183,7 +184,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/Los_Angeles 
+timezone: America/Los_Angeles
 
 
 # Plugins (previously gems:)
@@ -253,8 +254,6 @@ defaults:
       comments: true
       share: true
       related: true
-
-defaults:
   # _pages
   - scope:
       path: ""
@@ -262,14 +261,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-# Adding my portfolio collection follwing https://mmistakes.github.io/minimal-mistakes/docs/collections/
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-defaults:
   # _portfolio
   - scope:
       path: ""
@@ -279,3 +270,8 @@ defaults:
       author_profile: false
       share: true
 
+# Adding my portfolio collection follwing https://mmistakes.github.io/minimal-mistakes/docs/collections/
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
