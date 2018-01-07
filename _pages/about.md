@@ -1,13 +1,31 @@
 ---
-layout: single
-title: "About Me & This Site" 
-date: 2014-04-30
 permalink: /about/
+title: "About"
+excerpt: "A short description about myself and this website."
+toc: true
 ---
-Welcome to visit my blog. My name is **Bin Shi**, and I am studying Information Mangement at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and a tech lead in Sony for 9+ years in total. My prospective profession is to be a data engineer/scientist after graduation in May 2019. 
+Welcome. Here is some introduction about me and this website.
 
-So I will show some of my school/side projects on this website, including technical articles related to #java, #python, #web-design, #database, #cloud-computing, #big-data and  #data-science.
+## Short Version
+- Graduate Student Learning Software & Data Technolgies
+- Former Software Engineer in Oracle and Sony
+- Future Data Engineer/Scientist
+- Practicing Meditation and Mindfulness
+- Love Reading, Travel and Phtography...
 
-In addition, I am very interested in PIM (Personal Information Management) and GTD (Get Things Done). So I will demonstrate my methodology and valuable tools to build a seamless data flow to collect data, extract knowledge, learn, and even memorize useful information. Sometimes, I will also write notes on my other hobbies like reading, travel, and photography.
+## Long Version
+### Profession
+I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and then a tech lead in Sony for 9+ years in total.
 
-Hopefully, you can learn something from my website. Have a nice day!
+My prospective profession is to be a data engineer/scientist after graduation in May 2019. So I will show some of my school/side projects on this website, including some technical articles related to `java`, `python`, `web-design`, `database`, `cloud computing`, `big data` and `data science`.
+
+### Interests
+This blog is also about two of my most interesting topics. 
+***Mindfulness***. Maximum life experience with full attention.
+***Productivity***. Maximum achievements during a limited life
+
+I am still on the way to build my own methodology ,so I will write some articles to share with you my own observation and utilization from now and then. The ultimate purpose is to live a truly happy life with the greatest self. 
+
+Sometimes, I will also post some funny things like reading, travel, and photography.
+
+Hopefully, you learned something from my website. Good day😊
