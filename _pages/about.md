@@ -1,9 +1,10 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "A short description about myself and this website."
+excerpt: "About me and this website."
 toc: true
 ---
+
 Welcome. Here is some introduction about me and this website.
 
 ## Short Version
