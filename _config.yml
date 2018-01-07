@@ -10,10 +10,10 @@ github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "mindfulness"
+title                    : "Mindfulness & Productivity"
 title_separator          : "|"
 name                     : "Bin Shi"
-description              : "feel, think, learn and share. Be happy!"
+description              : "Live, learn and share"
 url                      : "https://ishibin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ishibin/ishibin.github.io"
@@ -23,7 +23,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : "shi_bin" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "ishibin" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
