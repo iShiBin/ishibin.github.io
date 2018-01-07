@@ -10,10 +10,10 @@ github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mindfulness & Productivity"
+title                    : "mindfulness & productivity"
 title_separator          : "|"
 name                     : "Bin Shi"
-description              : "Live, learn and share"
+description              : "live, learn and share"
 url                      : "https://ishibin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ishibin/ishibin.github.io"

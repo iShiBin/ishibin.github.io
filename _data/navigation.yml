@@ -1,8 +1,10 @@
 # main links
 main:
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "Portfolio"
+  - title: "cv"
+    url: https://www.linkedin.com/in/binshi
+  - title: "portfolio"
     url: /portfolio/
   # - title: "Sample Posts"
   #   url: /year-archive/
