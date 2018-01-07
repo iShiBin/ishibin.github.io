@@ -2,8 +2,6 @@
 main:
   - title: "About"
     url: /about/
-  - title: "CV"
-	url: https://www.linkedin.com/in/binshi
   - title: "Portfolio"
     url: /portfolio/
   # - title: "Sample Posts"
