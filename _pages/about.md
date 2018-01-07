@@ -4,15 +4,15 @@ title: "About"
 toc: true
 ---
 
-Here is some introduction about me and this website.
+me and this website:
 
 ## Short Version
 
-- Graduate Student Learning Software & Data Technolgies
+- Graduate Student Learning Software & Data Technologies
 - Former Software Engineer in Oracle and Sony
 - Future Data Engineer/Scientist
 - Practicing Meditation and Mindfulness
-- Love Reading, Travel and Phtography...
+- Love Reading, Travel, and Photography...
 
 ## Long Version
 ### Profession
@@ -25,7 +25,7 @@ This blog is also about two of my most interesting topics.
 ***Mindfulness***. Maximum life experience with full attention.
 ***Productivity***. Maximum achievements during a limited life
 
-I am still on the way to build my own methodology ,so I will write some articles to share with you my own observation and utilization from now and then. The ultimate purpose is to live a truly happy life with the greatest self.
+I am still on the way to build my own methodology, so I will write some articles to share with you my own observation and utilization from now and then. The ultimate purpose is to live a truly happy life with the greatest self.
 
 Sometimes, I will also post some funny things like reading, travel, and photography.
 
