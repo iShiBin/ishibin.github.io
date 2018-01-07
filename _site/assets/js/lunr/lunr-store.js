@@ -1,6 +1,6 @@
 var store = [{
         "title": "Program Structures and Algorithms",
-        "excerpt":"What I Learned  fundamentals of programmingdata structures and basic algorithms  common data structures          arrays, linked list, stacks and queues, hash tables and hash maps      trees, graphs,suffix trees      other specialized data structures        order of complexities for each one of these data structures  searching and sorting  backtracking  dynamic programming  bit manipulation  pattern searching…Course Links  Repository  Code Lab GPA: 4.0/4.0 💯","categories": [],
+        "excerpt":"What I Learned  fundamentals of programming data structures and basic algorithms  common data structures          arrays, linked list, stacks and queues, hash tables and hash maps      trees, graphs, suffix trees      other specialized data structures        order of complexities for each one of these data structures  searching and sorting  backtracking  dynamic programming  bit manipulation  pattern searching…Course Links  Repository  Code Lab GPA: 4.0/4.0 💯","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/algorithm/",
         "teaser":"http://localhost:4000/assets/images/teasers/info6205.png"},{

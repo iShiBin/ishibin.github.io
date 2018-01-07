@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/portfolio/algorithm/</loc>
-<lastmod>2018-01-06T21:24:36-08:00</lastmod>
+<lastmod>2018-01-07T10:27:08-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolio/programming/</loc>
-<lastmod>2018-01-06T21:24:36-08:00</lastmod>
+<lastmod>2018-01-07T10:27:08-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/mindfulness-site-launched/</loc>
@@ -20,10 +20,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/portfolio/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/about/index.html</loc>
-<lastmod>2017-12-27T21:38:22-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/cv/index.html</loc>

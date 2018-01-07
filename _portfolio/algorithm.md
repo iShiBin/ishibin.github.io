@@ -1,25 +1,24 @@
 ---
 title: "Program Structures and Algorithms"
-excerpt: "Data Structure and Algorithms"
+excerpt: "data structures and basic algorithms"
 toc: true
 header:
-  # image: /assets/images/application-development/inventory/code-snippet.png
-  teaser: /assets/images/teasers/info6205.png
+  teaser: "/assets/images/teasers/info6205.png"
 sidebar:
   - title: "Learner"
     image: "/assets/images/application-development/coding.png"
     image_alt: "Coding"
-    text: "Love Java and Python"
+    text: "Love Java and Python"
   - title: "Achievements"
-    text: "Learned frequently used algorithms. Built my own data structure libary. Solve 300+ leetcode problems"
+    text: "Learned frequently used algorithms. Built my own data structure library. Solve 300+ LeetCode problems"
 ---
 
 ## What I Learned
 
-- fundamentals of programmingdata structures and basic algorithms
+- fundamentals of programming data structures and basic algorithms
 - common data structures
   - arrays, linked list, stacks and queues, hash tables and hash maps
-  - trees, graphs,suffix trees
+  - trees, graphs, suffix trees
   - other specialized data structures
 - order of complexities for each one of these data structures
 - searching and sorting
