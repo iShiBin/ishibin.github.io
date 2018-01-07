@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/teasers/info6205.png
 sidebar:
   - title: "Learner"
-    image: /assets/images/application-development/coding.png
+    image: "/assets/images/application-development/coding.png"
     image_alt: "Coding"
     text: "Love Java and Python"
   - title: "Achievements"
