@@ -10,7 +10,7 @@ github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "mindfulness & productivity"
+title                    : "mindfulness"
 title_separator          : "|"
 name                     : "Bin Shi"
 description              : "live, learn and share"
