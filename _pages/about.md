@@ -1,18 +1,15 @@
 ---
 permalink: /about/
-title: "About"
+title: "About me and this website"
 toc: true
 ---
 
-me and this website:
-
 ## Short Version
 
-- Graduate Student Learning Software & Data Technologies
-- Former Software Engineer in Oracle and Sony
-- Future Data Engineer/Scientist
-- Practicing Meditation and Mindfulness
-- Love Reading, Travel, and Photography...
+- graduate student learning software & data technologies
+- former software engineer in Oracle and Sony
+- i love reading, travel & photography
+- this website is about my learning & projects
 
 ## Long Version
 ### Profession
@@ -20,13 +17,9 @@ I am studying Information Management at Northeastern University in Seattle from 
 
 My prospective profession is to be a data engineer/scientist after graduation in May 2019. So I will show some of my school/side projects on this website, including some technical articles related to `java`, `python`, `web-design`, `database`, `cloud computing`, `big data` and `data science`.
 
+If you would like to know more about my profession, please check [my cv](https://www.linkedin.com/in/binshi/).
+
 ### Interests
-This blog is also about two of my most interesting topics.
-***Mindfulness***. Maximum life experience with full attention.
-***Productivity***. Maximum achievements during a limited life
+Mindfulness and productivity are my most interesting subject, and I am still on my way to practice, and then build my own methodology.
 
-I am still on the way to build my own methodology, so I will write some articles to share with you my own observation and utilization from now and then. The ultimate purpose is to live a truly happy life with the greatest self.
-
-Sometimes, I will also post some funny things like reading, travel, and photography.
-
-Hopefully, you learned something from my website. Good day😊
+My other hobbies are reading, travel, and photography. I will keep writing notes and articles (mostly in Chinese) on [my life blog](http://shibin.info).
