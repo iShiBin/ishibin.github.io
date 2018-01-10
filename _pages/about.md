@@ -20,6 +20,6 @@ My prospective profession is to be a data engineer/scientist after graduation in
 If you would like to know more about my profession, please check [my cv](https://www.linkedin.com/in/binshi/).
 
 ### Interests
-Mindfulness and productivity are my most interesting subject, and I am still on my way to practice, and then build my own methodology.
+Mindfulness and productivity are my most interests, and I am still on my way to practice and build my own methodology.
 
 My other hobbies are reading, travel, and photography. I will keep writing notes and articles (mostly in Chinese) on [my life blog](http://shibin.info).
