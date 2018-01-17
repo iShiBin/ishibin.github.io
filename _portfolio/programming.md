@@ -9,7 +9,7 @@ sidebar:
   - title: "Learner"
     image: /assets/images/application-development/coding.png
     image_alt: "writing a Java program"
-    text: "Cooridnator in the final project."
+    text: "Team lead in the final project."
   - title: "Responsibilities"
     text: "Led and developed inventory edit module in the final project. Coordinated among 6 teams in the group."
 gallery:

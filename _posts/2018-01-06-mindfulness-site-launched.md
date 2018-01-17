@@ -1,20 +1,17 @@
 ---
 layout: single
-title: "Launched My Website Today!"
+title: "About me and this website"
 date: 2018-01-06
-
 ---
 
-Finally, I can launch this website today after trying multiple approaches. (I will write another post about the process.) So as the first post, it is essential for me to be very clear why I started this website. Only after that, I can continually write articles.
+## My Profession
+I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and then a tech lead in Sony for 9+ years in total.
 
-**Why do I start this website?**
+My prospective profession is to be a data engineer/scientist after graduation in May 2019. So I will show some of my school/side projects on this website, including some technical articles related to `java`, `python`, `web-design`, `database`, `cloud computing`, `big data` and `data science`.
 
-- It's a portfolio of my school/side projects or other competitions I participate in.
-- Writing can help me to keep track of my thoughts on two of my favorite subjects: mindfulness and productivity.
-- It's a simple approach to share my status and ideas without touching the overwhelming social media websites.
-- I hope my articles will also help others in some way.
+If you would like to know more about my profession, please check [my cv](https://www.linkedin.com/in/binshi/).
 
+## My Interests
+Mindfulness and productivity are my most interesting subject, and I am still on my way to practice, and then build my own methodology.
 
-
-
-2018-01-06, Seattle
+My other hobbies are reading, travel, and photography. I will keep writing notes and articles (mostly in Chinese) on [my life blog](http://shibin.info).
