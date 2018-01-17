@@ -13,4 +13,9 @@ var store = [{
         "excerpt":"Finally, I can launch this website today after trying multiple approaches. (I will write another post about the process.) So as the first post, it is essential for me to be very clear why I started this website. Only after that, I can continually write articles.Why do I start this website?  It’s a portfolio of my school/side projects or other competitions I participate in.  Writing can help me to keep track of my thoughts on two of my favorite subjects: mindfulness and productivity.  It’s a simple approach to share my status and ideas without touching the overwhelming social media websites.  I hope my articles will also help others in some way.2018-01-06, Seattle","categories": [],
         "tags": [],
         "url": "http://localhost:4000/mindfulness-site-launched/",
+        "teaser":"http://localhost:4000/assets/images/default-teaser.png"},{
+        "title": "Start small, achieve BIG!",
+        "excerpt":"Many people already know this, but why I mention it again, simply because it is very important and easy to forget.Nowadays, people just want to accomplish big and fancy things and tend to ignore the small ones. However, the universal law cannot be ignored that big achievements start from small.  Finishing a marathon starts with a step of running and then the next step.Writing a blog (and do not stop) is a big thing but it starts with a simple post. As to me, maybe it starts a feature of a programming language or a simple linear regression model. By keeping learning and practicing days after days, eventually, I will achieve big.2018-01-17, Seattle","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/start-small-achieve-big/",
         "teaser":"http://localhost:4000/assets/images/default-teaser.png"}]

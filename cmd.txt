@@ -1,1 +1,5 @@
+Navigate into the root directory of your local Jekyll site repository. Run your Jekyll site locally:
+
 bundle exec jekyll serve
+
+Preview your local Jekyll site in your web browser at http://localhost:4000.
