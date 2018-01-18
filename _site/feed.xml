@@ -1,18 +1,226 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-17T07:44:06-08:00</updated><id>http://localhost:4000/</id><title type="html">mindfulness</title><subtitle>live, learn and share</subtitle><author><name>Bin Shi</name></author><entry><title type="html">Start small, achieve BIG!</title><link href="http://localhost:4000/start-small-achieve-big/" rel="alternate" type="text/html" title="Start small, achieve BIG!" /><published>2018-01-17T00:00:00-08:00</published><updated>2018-01-17T00:00:00-08:00</updated><id>http://localhost:4000/start-small-achieve-big</id><content type="html" xml:base="http://localhost:4000/start-small-achieve-big/">&lt;p&gt;Many people already know this, but why I mention it again, simply because it is very important and easy to forget.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-17T19:10:21-08:00</updated><id>http://localhost:4000/</id><title type="html">mindfulness</title><subtitle>live, learn and share</subtitle><author><name>Bin Shi</name></author><entry><title type="html">Use `intertools` to solve combination and permutation problems in leetcode</title><link href="http://localhost:4000/itertools-in-leetcode/" rel="alternate" type="text/html" title="Use `intertools` to solve combination and permutation problems in leetcode" /><published>2018-01-17T01:00:00-08:00</published><updated>2018-01-17T01:00:00-08:00</updated><id>http://localhost:4000/itertools-in-leetcode</id><content type="html" xml:base="http://localhost:4000/itertools-in-leetcode/">&lt;p&gt;In python, package &lt;a href=&quot;https://docs.python.org/3/library/itertools.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;itertools&lt;/code&gt;&lt;/a&gt;  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.&lt;/p&gt;
+
+&lt;h1 id=&quot;quick-look-at-combinatoric-iterators&quot;&gt;Quick Look at &lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations&quot;&gt;Combinatoric Iterators&lt;/a&gt;&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Iterator&lt;/th&gt;
+      &lt;th&gt;Arguments&lt;/th&gt;
+      &lt;th&gt;Results&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.product&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;product()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;p, q, … [repeat=1]&lt;/td&gt;
+      &lt;td&gt;cartesian product, equivalent to a nested for-loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.permutations&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permutations()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;p[, r]&lt;/td&gt;
+      &lt;td&gt;r-length tuples, all possible orderings, no repeated elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;p, r&lt;/td&gt;
+      &lt;td&gt;r-length tuples, in sorted order, no repeated elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations_with_replacement()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;p, r&lt;/td&gt;
+      &lt;td&gt;r-length tuples, in sorted order, with repeated elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;product('ABCD', repeat=2)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permutations('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AB AC AD BA BC BD CA CB CD DA DB DC&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AB AC AD BC BD CD&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations_with_replacement('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AA AB AC AD BB BC BD CC CD DD&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;leetcode-problems-and-solutions&quot;&gt;LeetCode Problems and Solutions&lt;/h1&gt;
+
+&lt;h2 id=&quot;combinations&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/combinations/description/&quot;&gt;Combinations&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;Given two integers &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;k&lt;/em&gt;, return all possible combinations of &lt;em&gt;k&lt;/em&gt; numbers out of 1 … &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example,
+If &lt;em&gt;n&lt;/em&gt; = 4 and &lt;em&gt;k&lt;/em&gt; = 2, a solution is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;p&gt;It likes talored for the &lt;code class=&quot;highlighter-rouge&quot;&gt;itertools.combinations()&lt;/code&gt; function. :laughing:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;combine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+        :type n: int
+        :type k: int
+        :rtype: List[List[int]]
+        &quot;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;combination-sum-iii&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-iii/description/&quot;&gt;Combination Sum III&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;description-1&quot;&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;Find all possible combinations of &lt;strong&gt;*k&lt;/strong&gt;* numbers that add up to a number &lt;strong&gt;*n&lt;/strong&gt;*, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*Example 1:&lt;/strong&gt;*&lt;/p&gt;
+
+&lt;p&gt;Input:  &lt;strong&gt;&lt;em&gt;k&lt;/em&gt;&lt;/strong&gt; = 3,  &lt;strong&gt;&lt;em&gt;n&lt;/em&gt;&lt;/strong&gt; = 7&lt;/p&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[1,2,4]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;*Example 2:&lt;/strong&gt;*&lt;/p&gt;
+
+&lt;p&gt;Input:  &lt;strong&gt;&lt;em&gt;k&lt;/em&gt;&lt;/strong&gt; = 3,  &lt;strong&gt;&lt;em&gt;n&lt;/em&gt;&lt;/strong&gt; = 9&lt;/p&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[1,2,6], [1,3,5], [2,3,4]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;solution-1&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;combinationSum3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+        :type k: int
+        :type n: int
+        :rtype: List[List[int]]
+        &quot;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# n is too small or big&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# form a list of numbers from 1 to 10 (exclusive)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# comprehension&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;return list(e for e in itertools.combinations(nums, k) if sum(e) == n)&lt;/code&gt; will also work but it is a little bit slow that the list comprehension which is used in the provided solution.&lt;/p&gt;
+
+&lt;h2 id=&quot;permutations&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/permutations/description/&quot;&gt;Permutations&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;description-2&quot;&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;Given a collection of &lt;strong&gt;distinct&lt;/strong&gt; numbers, return all possible permutations.&lt;/p&gt;
+
+&lt;p&gt;For example,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[1,2,3]&lt;/code&gt; have the following permutations:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;solution-2&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;permute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        &quot;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;permutations-ii&quot;&gt;Permutations II&lt;/h2&gt;
+
+&lt;h3 id=&quot;description-3&quot;&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;Given a collection of numbers that might contain duplicates, return all possible unique permutations.&lt;/p&gt;
+
+&lt;p&gt;For example,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[1,1,2]&lt;/code&gt; have the following unique permutations:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;solution-3&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;permuteUnique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        &quot;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# get rid of duplicates&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;limitation&quot;&gt;Limitation&lt;/h1&gt;
+
+&lt;p&gt;The built-in function is very handy and cool. However, it is always slow to search all the combinations/permutations in a list of numbers. That’s where other algorithms like backtracking come in because it can prune the unnecessary branches when searching. Later, I will introduce the solution to these questions as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum&quot;&gt;Combination Sum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-ii&quot;&gt;Combination Sum II&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-iv&quot;&gt;Combination Sum IV&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2018-01-18, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">In python, package itertools is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.</summary></entry><entry><title type="html">Start small, achieve BIG!</title><link href="http://localhost:4000/start-small-achieve-big/" rel="alternate" type="text/html" title="Start small, achieve BIG!" /><published>2018-01-17T00:00:00-08:00</published><updated>2018-01-17T00:00:00-08:00</updated><id>http://localhost:4000/start-small-achieve-big</id><content type="html" xml:base="http://localhost:4000/start-small-achieve-big/">&lt;p&gt;Many people already know this, but why I mention it again, simply because it is very important and easy to forget.&lt;/p&gt;
 
 &lt;p&gt;Nowadays, people just want to accomplish big and fancy things and tend to ignore the small ones. However, the universal law cannot be ignored that &lt;strong&gt;big achievements start from small&lt;/strong&gt;.  Finishing a marathon starts with a step of running and then the next step.&lt;/p&gt;
 
 &lt;p&gt;Writing a blog (and do not stop) is a big thing but it starts with a simple post. As to me, maybe it starts a feature of a programming language or a simple linear regression model. By keeping learning and practicing days after days, eventually, I will achieve big.&lt;/p&gt;
 
-&lt;p&gt;2018-01-17, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">Many people already know this, but why I mention it again, simply because it is very important and easy to forget.</summary></entry><entry><title type="html">Launched My Website Today!</title><link href="http://localhost:4000/mindfulness-site-launched/" rel="alternate" type="text/html" title="Launched My Website Today!" /><published>2018-01-06T00:00:00-08:00</published><updated>2018-01-06T00:00:00-08:00</updated><id>http://localhost:4000/mindfulness-site-launched</id><content type="html" xml:base="http://localhost:4000/mindfulness-site-launched/">&lt;p&gt;Finally, I can launch this website today after trying multiple approaches. (I will write another post about the process.) So as the first post, it is essential for me to be very clear why I started this website. Only after that, I can continually write articles.&lt;/p&gt;
+&lt;p&gt;2018-01-17, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">Many people already know this, but why I mention it again, simply because it is very important and easy to forget.</summary></entry><entry><title type="html">About me and this website</title><link href="http://localhost:4000/mindfulness-site-launched/" rel="alternate" type="text/html" title="About me and this website" /><published>2018-01-06T00:00:00-08:00</published><updated>2018-01-06T00:00:00-08:00</updated><id>http://localhost:4000/mindfulness-site-launched</id><content type="html" xml:base="http://localhost:4000/mindfulness-site-launched/">&lt;h2 id=&quot;my-profession&quot;&gt;My Profession&lt;/h2&gt;
+&lt;p&gt;I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and then a tech lead in Sony for 9+ years in total.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Why do I start this website?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;My prospective profession is to be a data engineer/scientist after graduation in May 2019. So I will show some of my school/side projects on this website, including some technical articles related to &lt;code class=&quot;highlighter-rouge&quot;&gt;java&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;web-design&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;database&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;cloud computing&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;big data&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;data science&lt;/code&gt;.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;It’s a portfolio of my school/side projects or other competitions I participate in.&lt;/li&gt;
-  &lt;li&gt;Writing can help me to keep track of my thoughts on two of my favorite subjects: mindfulness and productivity.&lt;/li&gt;
-  &lt;li&gt;It’s a simple approach to share my status and ideas without touching the overwhelming social media websites.&lt;/li&gt;
-  &lt;li&gt;I hope my articles will also help others in some way.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;If you would like to know more about my profession, please check &lt;a href=&quot;https://www.linkedin.com/in/binshi/&quot;&gt;my cv&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;2018-01-06, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">Finally, I can launch this website today after trying multiple approaches. (I will write another post about the process.) So as the first post, it is essential for me to be very clear why I started this website. Only after that, I can continually write articles.</summary></entry></feed>
+&lt;h2 id=&quot;my-interests&quot;&gt;My Interests&lt;/h2&gt;
+&lt;p&gt;Mindfulness and productivity are my most interesting subject, and I am still on my way to practice, and then build my own methodology.&lt;/p&gt;
+
+&lt;p&gt;My other hobbies are reading, travel, and photography. I will keep writing notes and articles (mostly in Chinese) on &lt;a href=&quot;http://shibin.info&quot;&gt;my life blog&lt;/a&gt;.&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">My Profession I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and then a tech lead in Sony for 9+ years in total.</summary></entry></feed>

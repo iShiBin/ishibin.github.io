@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Start small, achieve BIG!"
-date: 2018-01-17
+date: 2018-01-17 08:00:00
 ---
 
 Many people already know this, but why I mention it again, simply because it is very important and easy to forget.
