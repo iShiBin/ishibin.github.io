@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Use intertools to solve combination and permutation problems in leetcode      mindfulness      </title>
+
+
+
+
+<meta name="description" content="In python, package itertools  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.">
+
+
+
+
+<meta name="author" content="Bin Shi">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="mindfulness">
+<meta property="og:title" content="Use intertools to solve combination and permutation problems in leetcode">
+
+
+  <link rel="canonical" href="http://localhost:4000/itertools-in-leetcode/">
+  <meta property="og:url" content="http://localhost:4000/itertools-in-leetcode/">
+
+
+
+  <meta property="og:description" content="In python, package itertools  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-01-17T01:00:00-08:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Bin Shi",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="mindfulness Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">mindfulness</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/">about</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/portfolio/">portfolio</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="http://localhost:4000/assets/images/bio.jpg" alt="Bin Shi" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Bin Shi</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+         
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Seattle, WA</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/_binshi" itemprop="sameAs">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://www.facebook.com/ishibin" itemprop="sameAs">
+            <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/binshi" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/i_shibin" itemprop="sameAs">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/ishibin" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.stackoverflow.com/users/8623886/bin-shi" itemprop="sameAs">
+            <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Use intertools to solve combination and permutation problems in leetcode">
+    <meta itemprop="description" content="In python, package itertools  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.">
+    <meta itemprop="datePublished" content="January 17, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Use <code class="highlighter-rouge">intertools</code> to solve combination and permutation problems in leetcode
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li>
+<a href="#combinations">Combinations</a>
+    <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#solution">Solution</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#combination-sum-iii">Combination Sum III</a>
+    <ul>
+      <li><a href="#description-1">Description</a></li>
+      <li><a href="#solution-1">Solution</a></li>
+      <li><a href="#note">Note</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#permutations">Permutations</a>
+    <ul>
+      <li><a href="#description-2">Description</a></li>
+      <li><a href="#solution-2">Solution</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#permutations-ii">Permutations II</a>
+    <ul>
+      <li><a href="#description-3">Description</a></li>
+      <li><a href="#solution-3">Solution</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>In python, package <a href="https://docs.python.org/3/library/itertools.html"><code class="highlighter-rouge">itertools</code></a>  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.</p>
+
+<h1 id="quick-look-at-combinatoric-iterators">Quick Look at <a href="https://docs.python.org/3/library/itertools.html#itertools.combinations">Combinatoric Iterators</a>
+</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Iterator</th>
+      <th>Arguments</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://docs.python.org/3/library/itertools.html#itertools.product"><code class="highlighter-rouge">product()</code></a></td>
+      <td>p, q, … [repeat=1]</td>
+      <td>cartesian product, equivalent to a nested for-loop</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.python.org/3/library/itertools.html#itertools.permutations"><code class="highlighter-rouge">permutations()</code></a></td>
+      <td>p[, r]</td>
+      <td>r-length tuples, all possible orderings, no repeated elements</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.python.org/3/library/itertools.html#itertools.combinations"><code class="highlighter-rouge">combinations()</code></a></td>
+      <td>p, r</td>
+      <td>r-length tuples, in sorted order, no repeated elements</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement"><code class="highlighter-rouge">combinations_with_replacement()</code></a></td>
+      <td>p, r</td>
+      <td>r-length tuples, in sorted order, with repeated elements</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">product('ABCD', repeat=2)</code></td>
+      <td> </td>
+      <td><code class="highlighter-rouge">AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">permutations('ABCD', 2)</code></td>
+      <td> </td>
+      <td><code class="highlighter-rouge">AB AC AD BA BC BD CA CB CD DA DB DC</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">combinations('ABCD', 2)</code></td>
+      <td> </td>
+      <td><code class="highlighter-rouge">AB AC AD BC BD CD</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">combinations_with_replacement('ABCD', 2)</code></td>
+      <td> </td>
+      <td><code class="highlighter-rouge">AA AB AC AD BB BC BD CC CD DD</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="leetcode-problems-and-solutions">LeetCode Problems and Solutions</h1>
+
+<h2 id="combinations"><a href="https://leetcode.com/problems/combinations/description/">Combinations</a></h2>
+
+<h3 id="description">Description</h3>
+
+<p>Given two integers <em>n</em> and <em>k</em>, return all possible combinations of <em>k</em> numbers out of 1 … <em>n</em>.</p>
+
+<p>For example,
+If <em>n</em> = 4 and <em>k</em> = 2, a solution is:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+</code></pre></div></div>
+
+<h3 id="solution">Solution</h3>
+
+<p>It likes talored for the <code class="highlighter-rouge">itertools.combinations()</code> function. <img class="emoji" title=":laughing:" alt=":laughing:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png" height="20" width="20"></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">combine</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="s">"""
+        :type n: int
+        :type k: int
+        :rtype: List[List[int]]
+        """</span>
+        <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="combination-sum-iii"><a href="https://leetcode.com/problems/combination-sum-iii/description/">Combination Sum III</a></h2>
+
+<h3 id="description-1">Description</h3>
+
+<p>Find all possible combinations of <strong>*k</strong>* numbers that add up to a number <strong>*n</strong>*, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.</p>
+
+<p><strong>*Example 1:</strong>*</p>
+
+<p>Input:  <strong><em>k</em></strong> = 3,  <strong><em>n</em></strong> = 7</p>
+
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[1,2,4]]
+</code></pre></div></div>
+
+<p><strong>*Example 2:</strong>*</p>
+
+<p>Input:  <strong><em>k</em></strong> = 3,  <strong><em>n</em></strong> = 9</p>
+
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[1,2,6], [1,3,5], [2,3,4]]
+</code></pre></div></div>
+
+<h3 id="solution-1">Solution</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">combinationSum3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="s">"""
+        :type k: int
+        :type n: int
+        :rtype: List[List[int]]
+        """</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">9</span><span class="p">)</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span> <span class="k">return</span> <span class="p">[]</span> <span class="c"># n is too small or big</span>
+        <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)]</span> <span class="c"># form a list of numbers from 1 to 10 (exclusive)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">]</span> <span class="c"># comprehension</span>
+</code></pre></div></div>
+
+<h3 id="note">Note</h3>
+
+<p><code class="highlighter-rouge">return list(e for e in itertools.combinations(nums, k) if sum(e) == n)</code> will also work but it is a little bit slow that the list comprehension which is used in the provided solution.</p>
+
+<h2 id="permutations"><a href="https://leetcode.com/problems/permutations/description/">Permutations</a></h2>
+
+<h3 id="description-2">Description</h3>
+
+<p>Given a collection of <strong>distinct</strong> numbers, return all possible permutations.</p>
+
+<p>For example,
+<code class="highlighter-rouge">[1,2,3]</code> have the following permutations:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+</code></pre></div></div>
+
+<h3 id="solution-2">Solution</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+        <span class="s">"""
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="permutations-ii">Permutations II</h2>
+
+<h3 id="description-3">Description</h3>
+
+<p>Given a collection of numbers that might contain duplicates, return all possible unique permutations.</p>
+
+<p>For example,
+<code class="highlighter-rouge">[1,1,2]</code> have the following unique permutations:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+</code></pre></div></div>
+
+<h3 id="solution-3">Solution</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">permuteUnique</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+        <span class="s">"""
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">nums</span><span class="p">)))</span> <span class="c"># get rid of duplicates</span>
+</code></pre></div></div>
+
+<h1 id="limitation">Limitation</h1>
+
+<p>The built-in function is very handy and cool. However, it is always slow to search all the combinations/permutations in a list of numbers. That’s where other algorithms like backtracking come in because it can prune the unnecessary branches when searching. Later, I will introduce the solution to these questions as well.</p>
+
+<p><a href="https://leetcode.com/problems/combination-sum">Combination Sum</a></p>
+
+<p><a href="https://leetcode.com/problems/combination-sum-ii">Combination Sum II</a></p>
+
+<p><a href="https://leetcode.com/problems/combination-sum-iv">Combination Sum IV</a></p>
+
+<p>2018-01-18, Seattle</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-17T01:00:00-08:00">January 17, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Use+%60intertools%60+to+solve+combination+and+permutation+problems+in+leetcode%20http%3A%2F%2Flocalhost%3A4000%2Fitertools-in-leetcode%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fitertools-in-leetcode%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fitertools-in-leetcode%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fitertools-in-leetcode%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/start-small-achieve-big/" class="pagination--pager" title="Start small, achieve BIG!
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/default-teaser.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/start-small-achieve-big/" rel="permalink">Start small, achieve BIG!
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Many people already know this, but why I mention it again, simply because it is very important and easy to forget.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="http://localhost:4000/assets/images/default-teaser.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/mindfulness-site-launched/" rel="permalink">About me and this website
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My Profession
+I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and ...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/ishibin"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2018 Bin Shi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/itertools-in-leetcode/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/itertools-in-leetcode"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ishibin.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+  </body>
+</html>
