@@ -10,10 +10,10 @@ github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "mindfulness"
+title                    : "mindfulness "
 title_separator          : "|"
 name                     : "Bin Shi"
-description              : "live, learn and share"
+description              : "Future Data Engineer"
 url                      : "https://ishibin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ishibin/ishibin.github.io"
