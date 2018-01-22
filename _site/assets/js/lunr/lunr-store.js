@@ -25,7 +25,12 @@ var store = [{
         "url": "http://localhost:4000/itertools-in-leetcode/",
         "teaser":"http://localhost:4000/assets/images/default-teaser.png"},{
         "title": "Get timestamp in millisecond in python 2",
-        "excerpt":"Just a quick code snippet to get the millisecond in python.# python 2.ximport timeimport calendar# to get the time stamp in 1. millisecond (Linux stype from the epoch 1970-01-01 00:00:00)dt = time.strptime('1970-01-02', '%Y-%m-%d')print(dt)ts = calendar.timegm(dt)print(ts * 1000)2018-01-18, Seattle","categories": [],
+        "excerpt":"Just a quick code snippet to get the millisecond in python.# python 2.ximport timeimport calendar# to get the time stamp in 1. millisecond (Linux stype from the epoch 1970-01-01 00:00:00)dt = time.strptime('1970-01-02', '%Y-%m-%d')print(dt)ts = calendar.timegm(dt)print(ts * 1000)2018-01-21, Seattle","categories": [],
         "tags": [],
         "url": "http://localhost:4000/get-timestamp-python/",
+        "teaser":"http://localhost:4000/assets/images/default-teaser.png"},{
+        "title": "My Lynda Certificates!",
+        "excerpt":"Utilize Online Learning Resource: LyndaThe university offered this great resource for students to learn online. Why not make use of it?! The overall quality of Lynda courses is great, and I can also earn some certificates and put it in linkedin.Here is some sample certificates, and click to check all my Lynda certificates. This is a small start but it will become big days after days.2018-01-21, Seattle","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/lynda-certificates/",
         "teaser":"http://localhost:4000/assets/images/default-teaser.png"}]

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Get timestamp in millisecond in python 2"
-date: 2018-01-21
+date: 2018-01-21 19:05:00
 ---
 
 Just a quick code snippet to get the millisecond in python.
@@ -20,4 +20,4 @@ print(ts * 1000)
 ```
 
 
-2018-01-18, Seattle
+2018-01-21, Seattle
