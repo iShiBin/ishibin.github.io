@@ -1,7 +1,12 @@
 ---
-layout: single
 title: "My Lynda Certificates!"
-date: 2018-01-21 19:14:00
+date: 2018-01-21 19:14:00 -08:00
+header: 
+teaser: "/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg"
+categories:
+  - learn
+tags:
+  - certificate
 ---
 
 **Utilize Online Learning Resource: Lynda**
@@ -10,11 +15,11 @@ The university offered this great resource for students to learn online. Why not
 
 Here is some sample certificates, and click to check [all my Lynda certificates](https://www.lynda.com/AllCertificates/User/11003062). This is a small start but it will become big days after days.
 
-![KafkaEssentialTraining_CertificateOfCompletion](/assets/images/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg)
+![KafkaEssentialTraining_CertificateOfCompletion](/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg)
 
-![LearningMongoDB_CertificateOfCompletion](/assets/images/certificates/LearningMongoDB_CertificateOfCompletion.jpg)
+![LearningMongoDB_CertificateOfCompletion](/assets/certificates/LearningMongoDB_CertificateOfCompletion.jpg)
 
-![LearningPythonGenerators_CertificateOfCompletion](/assets/images/certificates/LearningPythonGenerators_CertificateOfCompletion.jpg)
+![LearningPythonGenerators_CertificateOfCompletion](/assets/certificates/LearningPythonGenerators_CertificateOfCompletion.jpg)
 
 
 
