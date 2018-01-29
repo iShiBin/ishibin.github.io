@@ -30,7 +30,12 @@ var store = [{
         "url": "http://localhost:4000/get-timestamp-python/",
         "teaser":"http://localhost:4000/assets/images/default-teaser.png"},{
         "title": "My Lynda Certificates!",
-        "excerpt":"Utilize Online Learning Resource: LyndaThe university offered this great resource for students to learn online. Why not make use of it?! The overall quality of Lynda courses is great, and I can also earn some certificates and put it in linkedin.Here is some sample certificates, and click to check all my Lynda certificates. This is a small start but it will become big days after days.2018-01-21, Seattle","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/lynda-certificates/",
+        "excerpt":"Utilize Online Learning Resource: LyndaThe university offered this great resource for students to learn online. Why not make use of it?! The overall quality of Lynda courses is great, and I can also earn some certificates and put it in linkedin.Here is some sample certificates, and click to check all my Lynda certificates. This is a small start but it will become big days after days.2018-01-21, Seattle","categories": ["learn"],
+        "tags": ["certificate"],
+        "url": "http://localhost:4000/learn/lynda-certificates/",
+        "teaser":"http://localhost:4000/assets/images/default-teaser.png"},{
+        "title": "Got new skills: Spark & Scala",
+        "excerpt":"As part of my knowledge base in Big Data, I completed two new certificates in Spark and Scala. My next step is to practice Kafka and Spark in two real projects, and got familiar with the APIs.2018-01-29, Seattle","categories": ["learn"],
+        "tags": ["certificate"],
+        "url": "http://localhost:4000/learn/spark-scala/",
         "teaser":"http://localhost:4000/assets/images/default-teaser.png"}]
