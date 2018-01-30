@@ -1,8 +1,8 @@
 ---
 title: "My Lynda Certificates!"
 date: 2018-01-21 19:14:00 -08:00
-header: 
-teaser: "/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg"
+header:
+teaser: "https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg"
 categories:
   - learn
 tags:
@@ -15,11 +15,11 @@ The university offered this great resource for students to learn online. Why not
 
 Here is some sample certificates, and click to check [all my Lynda certificates](https://www.lynda.com/AllCertificates/User/11003062). This is a small start but it will become big days after days.
 
-![KafkaEssentialTraining_CertificateOfCompletion](/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg)
+![KafkaEssentialTraining](https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/KafkaEssentialTraining_CertificateOfCompletion.jpg)
 
-![LearningMongoDB_CertificateOfCompletion](/assets/certificates/LearningMongoDB_CertificateOfCompletion.jpg)
+![LearningMongoDB](https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/LearningMongoDB_CertificateOfCompletion.jpg)
 
-![LearningPythonGenerators_CertificateOfCompletion](/assets/certificates/LearningPythonGenerators_CertificateOfCompletion.jpg)
+![LearningPythonGenerators](https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/LearningPythonGenerators_CertificateOfCompletion.jpg)
 
 
 
