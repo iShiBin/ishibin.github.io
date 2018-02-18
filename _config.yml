@@ -10,7 +10,7 @@ github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "mindfulness "
+title                    : "get value from data"
 title_separator          : "|"
 name                     : "Bin Shi"
 description              : "Future Data Engineer"
