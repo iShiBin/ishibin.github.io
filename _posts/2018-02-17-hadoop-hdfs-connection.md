@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot Failed on Connecting to HDFS Exception"
+title: "Troubleshoot HDFS Connection Exception"
 date: 2018-02-17 20:34:00 -08:00
 header:
 teaser: "http://www.crackinghadoop.com/wp-content/uploads/2016/08/hadoop-hdfs-300x200.jpg"
@@ -51,7 +51,7 @@ When EC2 reboots, temp files in the system's temp folder may be cleaned, which l
 # Solution
 
 1. create a new temp folder (supposing /home/ubuntu/apps/hadoop/tmp)
-2. add the `hadoop.tmp.dir` property in the core-site.xml file (located under etc/hadoop in the $HADOOP_ROOT) 
+2. add the `hadoop.tmp.dir` property in the core-site.xml file (located under etc/hadoop in the $HADOOP_ROOT)
 3. format the HDFS
 4. restart hadoop
 
