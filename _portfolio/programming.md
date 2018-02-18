@@ -6,10 +6,10 @@ header:
   # image: /assets/images/application-development/inventory/code-snippet.png
   teaser: /assets/images/application-development/inventory/inventory-ist.png
 sidebar:
-  - title: "Learner"
+  - title: "Data Pipeline"
     image: /assets/images/application-development/coding.png
     image_alt: "writing a Java program"
-    text: "Team lead in the final project."
+    text: "Built the data pipeline and movie recommendation system"
   - title: "Responsibilities"
     text: "Led and developed inventory edit module in the final project. Coordinated among 6 teams in the group."
 gallery:
@@ -45,6 +45,6 @@ gallery:
 - Projects
   - [Hang Man](https://github.com/iShiBin/info5100/tree/master/projects/hang-man)
   - [Game of Hearts](https://github.com/iShiBin/info5100/tree/master/projects/game-of-hearts)
-  - [Inventory Management](https://github.com/iShiBin/info5100/tree/master/projects/inventory-management) 
+  - [Inventory Management](https://github.com/iShiBin/info5100/tree/master/projects/inventory-management)
 
 ## GPA: 4.0/4.0 💯
