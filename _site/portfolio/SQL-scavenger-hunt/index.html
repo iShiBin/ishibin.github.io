@@ -1,0 +1,428 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            SQL Scavenger Hunt with BigQuery      get value from data      </title>
+
+
+
+
+<meta name="description" content="Utilize BigQuery using SQL">
+
+
+
+
+<meta name="author" content="Bin Shi">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="get value from data">
+<meta property="og:title" content="SQL Scavenger Hunt with BigQuery">
+
+
+  <link rel="canonical" href="http://localhost:4000/portfolio/SQL-scavenger-hunt/">
+  <meta property="og:url" content="http://localhost:4000/portfolio/SQL-scavenger-hunt/">
+
+
+
+  <meta property="og:description" content="Utilize BigQuery using SQL">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  <meta property="og:image" content="https://gallery.mailchimp.com/e4c8fb8b43860678deab268e5/images/eb456b4f-4b9e-491e-b711-0fe1c2691eec.png">
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-02-18T22:29:15-08:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Bin Shi",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="get value from data Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">get value from data</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/" >about</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/portfolio/" >portfolio</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="https://gallery.mailchimp.com/e4c8fb8b43860678deab268e5/images/eb456b4f-4b9e-491e-b711-0fe1c2691eec.png" alt="SQL Scavenger Hunt with BigQuery" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+        <img src=
+        
+          "http://localhost:4000/assets/images/application-development/coding.png"
+        
+        alt="Utilize BigQuery using SQL and Python">
+      
+      <h3>SQL Scavenger Hunt</h3>
+      <p>Utilize BigQuery using SQL + Python</p>
+
+    
+      
+      <h3>Achievements</h3>
+      <p>Completed this 5 days’ SQL hunt, and finished all the challenges.</p>
+
+    
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="SQL Scavenger Hunt with BigQuery">
+    <meta itemprop="description" content="Utilize BigQuery using SQL">
+    <meta itemprop="datePublished" content="February 18, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">SQL Scavenger Hunt with BigQuery
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#what-i-learned">What I Learned</a></li>
+  <li><a href="#my-shared-kernels">My Shared Kernels</a></li>
+  <li><a href="#what-is-next">What is Next?</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h3 id="what-i-learned">What I Learned</h3>
+<ul>
+  <li>How to SELECT columns FROM a table WHERE certain conditions are met.</li>
+  <li>How to use GROUP BY to apply functions like COUNT() to each group separately. And how to filter out groups using HAVING.</li>
+  <li>How to return sorted data with ORDER BY and how to work with dates in SQL.</li>
+  <li>How to use WITH and AS to make your code succinct and easy to read.</li>
+  <li>How use use JOIN to align data from multiple tables.</li>
+</ul>
+
+<figure class="third ">
+  
+    
+      <a href="https://www.kaggle.com/open-aq/openaq">
+        <img src="https://kaggle2.blob.core.windows.net/datasets-images/5836/8677/b8ed31b9214804be0f49e81082be757b/dataset-thumbnail.jpg?t=2017-12-01-18-11-38" alt="Data from OpenAQ" />
+      </a>
+    
+  
+    
+      <a href="https://www.kaggle.com/hacker-news/hacker-news">
+        <img src="https://kaggle2.blob.core.windows.net/datasets-images/6057/8942/78efcb41b7ff05ca4a3e0a226e74dfbf/dataset-thumbnail.jpg?t=2017-12-11-22-38-33" alt="Data from Hacker News" />
+      </a>
+    
+  
+    
+      <a href="https://www.kaggle.com/usdot/nhtsa-traffic-fatalities">
+        <img src="https://kaggle2.blob.core.windows.net/datasets-images/5837/8678/95013c374d63fffb775fa7f4b0fe0994/dataset-thumbnail.jpg?t=2017-12-01-21-57-46" alt="Data from US Traffic Fatality Records" />
+      </a>
+    
+  
+    
+      <a href="https://www.kaggle.com/bigquery/bitcoin-blockchain">
+        <img src="https://kaggle2.blob.core.windows.net/datasets-images/11496/15906/3a4c9acc482014bf69a10ee4bcbb3682/dataset-thumbnail.jpg?t=2018-01-31-20-20-27" alt="Data from Bitcoin Blockchain" />
+      </a>
+    
+  
+    
+      <a href="https://www.kaggle.com/github/github-repos">
+        <img src="https://kaggle2.blob.core.windows.net/datasets-images/6178/9082/ae879d8a06e6163458919a1b7595ae2a/dataset-thumbnail.jpg?t=2017-12-11-22-19-19" alt="Data from GitHub Repos" />
+      </a>
+    
+  
+    
+      <a href="http://www.congruentsolutions.com/wp-content/uploads/2016/03/Google-BigQuery-300x285.png">
+        <img src="http://www.congruentsolutions.com/wp-content/uploads/2016/03/Google-BigQuery-300x285.png" alt="Google BigQuery" />
+      </a>
+    
+  
+  
+    <figcaption>Open Dataset from Google
+</figcaption>
+  
+</figure>
+<h3 id="my-shared-kernels">My Shared Kernels</h3>
+<ul>
+  <li><a href="https://www.kaggle.com/binshi/sql-scavenger-hunt-day-1-f30cd0">SQL Scavenger Hunt: Day 1</a></li>
+  <li><a href="https://www.kaggle.com/binshi/sql-scavenger-hunt-day-2">SQL Scavenger Hunt: Day 2</a></li>
+  <li><a href="https://www.kaggle.com/binshi/sql-scavenger-hunt-day-3">SQL Scavenger Hunt: Day 3</a></li>
+  <li><a href="https://www.kaggle.com/binshi/sql-scavenger-hunt-day-4">SQL Scavenger Hunt: Day 4</a></li>
+  <li><a href="https://www.kaggle.com/binshi/sql-scavenger-hunt-day-5">SQL Scavenger Hunt: Day 5</a></li>
+</ul>
+
+<h3 id="what-is-next">What is Next?</h3>
+<p>Try writing an interesting analysis kernel on one of the <a href="https://www.kaggle.com/datasets?sortBy=hottest&amp;group=public&amp;page=1&amp;pageSize=20&amp;size=all&amp;filetype=json&amp;license=all&amp;utm_medium=email&amp;utm_source=mailchimp&amp;utm_campaign=sql+scav+hunt">BigQuery datasets</a> and making it public. (The winners will win $1000 on on February 15th and 22nd.)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-02-18T22:29:15-08:00">February 18, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=SQL+Scavenger+Hunt+with+BigQuery%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSQL-scavenger-hunt%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSQL-scavenger-hunt%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSQL-scavenger-hunt%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSQL-scavenger-hunt%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="http://localhost:4000/portfolio/algorithm/" class="pagination--pager" title="Program Structures and Algorithms
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/ishibin"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Bin Shi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
