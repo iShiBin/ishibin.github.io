@@ -6,12 +6,12 @@ header:
   # image: /assets/images/application-development/inventory/code-snippet.png
   teaser: https://s3-us-west-2.amazonaws.com/github-photo-links/Screen+Shot+2018-01-26+at+4.32.24+PM.png
 sidebar:
-  - title: "Learner"
+  - title: "Data Pipeline"
     image: /assets/images/application-development/coding.png
     image_alt: "build a data pipeline"
-    text: "Team lead in the final project."
+    text: "Kafka + SparkML + Scala"
   - title: "Responsibilities"
-    text: "Ingestion data using kafka; Predict the movie rating using Scala and SparkML"
+    text: "Ingested data using kafka. Predicted the movie rating using Scala and SparkML."
 ---
 
 ## What I Learned
