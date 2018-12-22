@@ -6,7 +6,6 @@ toc: true
 
 ## Short Version
 
-- ​
 - learning software & data technologies
 - former software engineer in Oracle and Sony
 - i love reading, travel & photography
