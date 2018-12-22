@@ -39,31 +39,31 @@ The input contains three types of commands corresponding to the three operations
   If the version number has not yet been recorded, return the most recent value for the key. 
   See below for examples of formatted output.
 
-  *Sample Input*
-   PUT key1 5
-   PUT key2 6
-   GET key1
-   GET key1 1
-   GET key2 2
-   PUT key1 7
-   GET key1 1
-   GET key1 2
-   GET key1 3
-   GET key4
-   GET key1 4
+  >*Sample Input*  
+   PUT key1 5  
+   PUT key2 6  
+   GET key1  
+   GET key1 1  
+   GET key2 2  
+   PUT key1 7  
+   GET key1 1  
+   GET key1 2  
+   GET key1 3  
+   GET key4  
+   GET key1 4  
 
-  *Sample Output*
-   PUT(#1) key1 = 5
-   PUT(#2) key2 = 6
-   GET key1 = 5
-   GET key1(#1) = 5
-   GET key2(#2) = 6
-   PUT(#3) key1 = 7
-   GET key1(#1) = 5
-   GET key1(#2) = 5
-   GET key1(#3) = 7
-   GET key4 = <NULL>
-   GET key1(#4) = 7
+  >*Sample Output*  
+   PUT(#1) key1 = 5  
+   PUT(#2) key2 = 6  
+   GET key1 = 5  
+   GET key1(#1) = 5  
+   GET key2(#2) = 6  
+   PUT(#3) key1 = 7  
+   GET key1(#1) = 5  
+   GET key1(#2) = 5  
+   GET key1(#3) = 7  
+   GET key4 = <NULL>  
+   GET key1(#4) = 7  
 
 ---
 
