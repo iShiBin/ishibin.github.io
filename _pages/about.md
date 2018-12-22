@@ -6,7 +6,8 @@ toc: true
 
 ## Short Version
 
-- graduate student learning software & data technologies
+- ​
+- learning software & data technologies
 - former software engineer in Oracle and Sony
 - i love reading, travel & photography
 - this website is about my learning & projects
