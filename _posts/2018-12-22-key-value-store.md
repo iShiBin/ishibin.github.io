@@ -67,7 +67,7 @@ The input contains three types of commands corresponding to the three operations
 
 ---
 
-```pytyon
+```python
 import fileinput
 from bisect import bisect
 import fileinput
