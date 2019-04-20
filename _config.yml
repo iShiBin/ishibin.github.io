@@ -13,7 +13,7 @@ locale                   : "en-US"
 title                    : "get value from data"
 title_separator          : "|"
 name                     : "Bin Shi"
-description              : "Software & Data Engineer"
+description              : "Data Engineer"
 url                      : "https://ishibin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ishibin/ishibin.github.io"
@@ -85,10 +85,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bin Shi"
+  name             : "Bin"
   avatar           : "/assets/images/bio.jpg"
-  bio              : "Engineer"
-  location         : "Seattle, WA"
+  bio              : "Data Engineer"
+  location         : "San Mateo, CA"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
