@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Bin"
-  avatar           : "/assets/images/bio.jpg"
+  avatar           : "/assets/images/bio.png"
   bio              : "Data Engineer"
   location         : "San Mateo, CA"
   email            :
