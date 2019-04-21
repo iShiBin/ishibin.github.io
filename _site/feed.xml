@@ -1,4 +1,272 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-20T20:18:13-07:00</updated><id>http://localhost:4000/</id><title type="html">get value from data</title><subtitle>Future Data Engineer</subtitle><author><name>Bin Shi</name></author><entry><title type="html">Use MapReduce to Find the Top k Rated Movies</title><link href="http://localhost:4000/big-data/top-k-rated-movies/" rel="alternate" type="text/html" title="Use MapReduce to Find the Top k Rated Movies" /><published>2018-03-04T10:07:00-08:00</published><updated>2018-03-04T10:07:00-08:00</updated><id>http://localhost:4000/big-data/top-k-rated-movies</id><content type="html" xml:base="http://localhost:4000/big-data/top-k-rated-movies/">&lt;h1 id=&quot;use-mapreduce-to-find-the-top-k-rated-movies-in-the-movielens-dataset&quot;&gt;Use MapReduce to find the top k rated movies in the movieLens dataset&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T16:21:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">get value from data</title><subtitle>Data Engineer</subtitle><author><name>Bin</name></author><entry><title type="html">Completed the M.S Degree in Information Systems</title><link href="http://localhost:4000/education/M.S-NEU/" rel="alternate" type="text/html" title="Completed the M.S Degree in Information Systems " /><published>2018-12-22T18:38:00-08:00</published><updated>2018-12-22T18:38:00-08:00</updated><id>http://localhost:4000/education/M.S-NEU</id><content type="html" xml:base="http://localhost:4000/education/M.S-NEU/">&lt;p&gt;December 2018, I finished my master degree in Information Systems in NEU, with a GPA of 3.96.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Attempt Hours&lt;/th&gt;
+      &lt;th&gt;Passed Hours&lt;/th&gt;
+      &lt;th&gt;Earned Hours&lt;/th&gt;
+      &lt;th&gt;GPA Hours&lt;/th&gt;
+      &lt;th&gt;Quality Points&lt;/th&gt;
+      &lt;th&gt;GPA&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total Institution&lt;/td&gt;
+      &lt;td&gt;33.000&lt;/td&gt;
+      &lt;td&gt;33.000&lt;/td&gt;
+      &lt;td&gt;33.000&lt;/td&gt;
+      &lt;td&gt;33.000&lt;/td&gt;
+      &lt;td&gt;130.668&lt;/td&gt;
+      &lt;td&gt;3.96&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;institution-credit&quot;&gt;Institution Credit&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Semester&lt;/th&gt;
+      &lt;th&gt;Subject&lt;/th&gt;
+      &lt;th&gt;Course&lt;/th&gt;
+      &lt;th&gt;Title&lt;/th&gt;
+      &lt;th&gt;Grade&lt;/th&gt;
+      &lt;th&gt;Credit Hours&lt;/th&gt;
+      &lt;th&gt;Quality Points&lt;/th&gt;
+      &lt;th&gt;GPA&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2017 Fall&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;5100&lt;/td&gt;
+      &lt;td&gt;Application Engineer &amp;amp; Dev&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2017 Fall&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;6205&lt;/td&gt;
+      &lt;td&gt;Program Structure &amp;amp; Algorithms&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Spring&lt;/td&gt;
+      &lt;td&gt;ENCP&lt;/td&gt;
+      &lt;td&gt;6000&lt;/td&gt;
+      &lt;td&gt;Career Managmnt for Engineers&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;4.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Spring&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;6250&lt;/td&gt;
+      &lt;td&gt;Web Development Tools &amp;amp; Methds&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Spring&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;7250&lt;/td&gt;
+      &lt;td&gt;Engineering Big-Data Systems&lt;/td&gt;
+      &lt;td&gt;A-&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;14.668&lt;/td&gt;
+      &lt;td&gt;3.67&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Spring&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;7390&lt;/td&gt;
+      &lt;td&gt;Advances Data Sci/Architecture&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Fall&lt;/td&gt;
+      &lt;td&gt;CSYE&lt;/td&gt;
+      &lt;td&gt;6225&lt;/td&gt;
+      &lt;td&gt;Netwrk Strctrs &amp;amp; Cloud Cmpting&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Fall&lt;/td&gt;
+      &lt;td&gt;CSYE&lt;/td&gt;
+      &lt;td&gt;7245&lt;/td&gt;
+      &lt;td&gt;Big Data Sys &amp;amp; Int Analytics&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018 Fall&lt;/td&gt;
+      &lt;td&gt;INFO&lt;/td&gt;
+      &lt;td&gt;7500&lt;/td&gt;
+      &lt;td&gt;Cryptocurrency/Smart Contract&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16.000&lt;/td&gt;
+      &lt;td&gt;4.00&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Bin</name></author><category term="master" /><summary type="html">December 2018, I finished my master degree in Information Systems in NEU, with a GPA of 3.96.</summary></entry><entry><title type="html">Versioned Key-Value Store</title><link href="http://localhost:4000/algorithm/key-value-store/" rel="alternate" type="text/html" title="Versioned Key-Value Store" /><published>2018-12-22T15:22:00-08:00</published><updated>2018-12-22T15:22:00-08:00</updated><id>http://localhost:4000/algorithm/key-value-store</id><content type="html" xml:base="http://localhost:4000/algorithm/key-value-store/">&lt;p&gt;&lt;strong&gt;Versioned Key-Value Store&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You are to build a simple key-value store for storing integers (keys are strings, values are integers)
+   and a &lt;strong&gt;global&lt;/strong&gt; version (integer). You will not persist data to disk. You will store the data in memory.&lt;/p&gt;
+
+&lt;p&gt;The version number is an integer that increases monotonically. Every time any key is written with a value, 
+   the version number is increased. The first write is version number 1. The second write is version number 2, and so on.&lt;/p&gt;
+
+&lt;p&gt;The store supports three operations. The first is PUT, which returns the version number of this write. 
+   The second operation is the simple GET. This returns the last value mapped to the key.
+   The third operation is the versioned GET. This takes a key and a number. Assume that all inputs are case sensitive.&lt;/p&gt;
+
+&lt;p&gt;The input contains three types of commands corresponding to the three operations supported by the store:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;PUT &lt;key&gt; &lt;value&gt;
+Set the key name to the value. Key strings will not contains spaces. Print out the version number, 
+the key and the value as PUT(#&lt;version number=&quot;&quot;&gt;) &lt;key&gt; = &lt;value&gt;. 
+The first write in the file should be version 1, and the second should be version number 2, etc.&lt;/value&gt;&lt;/key&gt;&lt;/version&gt;&lt;/value&gt;&lt;/key&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GET &lt;key&gt;
+Print out the key and the last value of the key, or &lt;NULL&gt; if that key has never been set as in: GET &lt;key&gt; = &lt;value&gt;&lt;/value&gt;&lt;/key&gt;&lt;/NULL&gt;&lt;/key&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GET &lt;key&gt; &lt;version number=&quot;&quot;&gt;
+Print out the key, the version number and the value of key as it was at the time of the version number, 
+or &lt;NULL&gt; if that key was not set at that time, as in GET &lt;key&gt;(#version) = &lt;value&gt;.
+If the version number has not yet been recorded, return the most recent value for the key. 
+See below for examples of formatted output.&lt;/value&gt;&lt;/key&gt;&lt;/NULL&gt;&lt;/version&gt;&lt;/key&gt;&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;em&gt;Sample Input&lt;/em&gt;&lt;br /&gt;
+ PUT key1 5&lt;br /&gt;
+ PUT key2 6&lt;br /&gt;
+ GET key1&lt;br /&gt;
+ GET key1 1&lt;br /&gt;
+ GET key2 2&lt;br /&gt;
+ PUT key1 7&lt;br /&gt;
+ GET key1 1&lt;br /&gt;
+ GET key1 2&lt;br /&gt;
+ GET key1 3&lt;br /&gt;
+ GET key4&lt;br /&gt;
+ GET key1 4&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;em&gt;Sample Output&lt;/em&gt;&lt;br /&gt;
+ PUT(#1) key1 = 5&lt;br /&gt;
+ PUT(#2) key2 = 6&lt;br /&gt;
+ GET key1 = 5&lt;br /&gt;
+ GET key1(#1) = 5&lt;br /&gt;
+ GET key2(#2) = 6&lt;br /&gt;
+ PUT(#3) key1 = 7&lt;br /&gt;
+ GET key1(#1) = 5&lt;br /&gt;
+ GET key1(#2) = 5&lt;br /&gt;
+ GET key1(#3) = 7&lt;br /&gt;
+ GET key4 = &lt;NULL&gt;  
+ GET key1(#4) = 7&lt;/NULL&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fileinput&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bisect&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bisect&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fileinput&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;KVStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+    - reduce the GET time complexity by using bisect to query the stored versions (sorted list)
+    - deal with edge cases and error handling
+    &quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# PUT O(1), O(n)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# GET O(log(n)), O(n)&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;g_version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# {key: {verion:value}}&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;KVStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g_version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; 
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KVStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g_version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KVStore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g_version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PUT(#{KVStore.g_version}) {key} = {value}'&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# assume verison is &amp;gt;= 1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GET {key} = &amp;lt;NULL&amp;gt;'&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;max_version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GET {key} = {value}'&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GET {key}(#{version}) = {value}'&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;le_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bisect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;le_version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;le_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;le_version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GET {key}(#{version}) = {value}'&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# invalid version number&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ValueError&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileinput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'PUT'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'GET'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ValueError&lt;/span&gt; 
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KVStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'./input.txt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Bin</name></author><category term="map" /><summary type="html">Versioned Key-Value Store</summary></entry><entry><title type="html">Use MapReduce to Find the Top k Rated Movies</title><link href="http://localhost:4000/big-data/top-k-rated-movies/" rel="alternate" type="text/html" title="Use MapReduce to Find the Top k Rated Movies" /><published>2018-03-04T10:07:00-08:00</published><updated>2018-03-04T10:07:00-08:00</updated><id>http://localhost:4000/big-data/top-k-rated-movies</id><content type="html" xml:base="http://localhost:4000/big-data/top-k-rated-movies/">&lt;h1 id=&quot;use-mapreduce-to-find-the-top-k-rated-movies-in-the-movielens-dataset&quot;&gt;Use MapReduce to find the top k rated movies in the movieLens dataset&lt;/h1&gt;
 
 &lt;p&gt;Download the following dataset and copy all the files to a folder in HDFS&lt;/p&gt;
 
@@ -355,18 +623,18 @@ hadoop jar topk.jar TopK /movielens/ml-1m/rating/output /movielens/ml-1m/rating/
 &lt;h1 id=&quot;furthermore&quot;&gt;FURTHERMORE&lt;/h1&gt;
 &lt;p&gt;This is out of the assignment’s scope but what could be done as follow-ups are:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] generalize the K so that this program could be used to count the top K
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;p&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;generalize the K so that this program could be used to count the top K
     Set the parameter of this job’s configuration. For example, run this command to get the top 10 rated movies.
     &lt;code class=&quot;highlighter-rouge&quot;&gt;hadoop jar topk.jar TopK -D topk=10 /input_dir /output_dir&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
     &lt;p&gt;implement the &lt;code class=&quot;highlighter-rouge&quot;&gt;[movieid:name]&lt;/code&gt; hash map so it can display the movie name instead of id automatically&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Bin Shi</name></author><category term="hadoop" /><summary type="html">Use MapReduce to find the top k rated movies in the movieLens dataset</summary></entry><entry><title type="html">Big Data Certificate @Bittiger!</title><link href="http://localhost:4000/learn/bittiger-bigdata-certificate/" rel="alternate" type="text/html" title="Big Data Certificate @Bittiger!" /><published>2018-02-19T15:38:00-08:00</published><updated>2018-02-19T15:38:00-08:00</updated><id>http://localhost:4000/learn/bittiger-bigdata-certificate</id><content type="html" xml:base="http://localhost:4000/learn/bittiger-bigdata-certificate/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/Big%20Data%20Engineer%20Mastery%20Program.png&quot; alt=&quot;Big Data Certificate @Bittige&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Bin</name></author><category term="hadoop" /><summary type="html">Use MapReduce to find the top k rated movies in the movieLens dataset</summary></entry><entry><title type="html">Big Data Certificate @Bittiger!</title><link href="http://localhost:4000/learn/bittiger-bigdata-certificate/" rel="alternate" type="text/html" title="Big Data Certificate @Bittiger!" /><published>2018-02-19T15:38:00-08:00</published><updated>2018-02-19T15:38:00-08:00</updated><id>http://localhost:4000/learn/bittiger-bigdata-certificate</id><content type="html" xml:base="http://localhost:4000/learn/bittiger-bigdata-certificate/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/Big%20Data%20Engineer%20Mastery%20Program.png&quot; alt=&quot;Big Data Certificate @Bittige&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;2018-02-19, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><category term="certificate" /><summary type="html"></summary></entry><entry><title type="html">BigQuery using Python and SQL</title><link href="http://localhost:4000/big-data/bigquery-sql-python/" rel="alternate" type="text/html" title="BigQuery using Python and SQL" /><published>2018-02-19T08:34:00-08:00</published><updated>2018-02-19T08:34:00-08:00</updated><id>http://localhost:4000/big-data/bigquery-sql-python</id><content type="html" xml:base="http://localhost:4000/big-data/bigquery-sql-python/">&lt;p&gt;Here is the basic steps to use SQL and Python in BigQuery.&lt;/p&gt;
+&lt;p&gt;2018-02-19, Seattle&lt;/p&gt;</content><author><name>Bin</name></author><category term="certificate" /><summary type="html"></summary></entry><entry><title type="html">BigQuery using Python and SQL</title><link href="http://localhost:4000/big-data/bigquery-sql-python/" rel="alternate" type="text/html" title="BigQuery using Python and SQL" /><published>2018-02-19T08:34:00-08:00</published><updated>2018-02-19T08:34:00-08:00</updated><id>http://localhost:4000/big-data/bigquery-sql-python</id><content type="html" xml:base="http://localhost:4000/big-data/bigquery-sql-python/">&lt;p&gt;Here is the basic steps to use SQL and Python in BigQuery.&lt;/p&gt;
 
 &lt;p&gt;Step 1:&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# import package with helper functions&lt;/span&gt;
@@ -405,7 +673,7 @@ hadoop jar topk.jar TopK /movielens/ml-1m/rating/output /movielens/ml-1m/rating/
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accidents_by_day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f0_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Number of Accidents by Rank of Day &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; (Most to least dangerous)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Note: The source code comes from my &lt;a href=&quot;https://www.kaggle.com/binshi/sql-scavenger-hunt-day-3&quot;&gt;SQL Scavenger Hunt: Day 3&lt;/a&gt;&lt;/p&gt;</content><author><name>Bin Shi</name></author><category term="BigQuery" /><summary type="html">Here is the basic steps to use SQL and Python in BigQuery.</summary></entry><entry><title type="html">Troubleshoot HDFS Connection Exception</title><link href="http://localhost:4000/big-data/hadoop-hdfs-connection/" rel="alternate" type="text/html" title="Troubleshoot HDFS Connection Exception" /><published>2018-02-17T20:34:00-08:00</published><updated>2018-02-17T20:34:00-08:00</updated><id>http://localhost:4000/big-data/hadoop-hdfs-connection</id><content type="html" xml:base="http://localhost:4000/big-data/hadoop-hdfs-connection/">&lt;h1 id=&quot;error-message&quot;&gt;Error Message&lt;/h1&gt;
+&lt;p&gt;Note: The source code comes from my &lt;a href=&quot;https://www.kaggle.com/binshi/sql-scavenger-hunt-day-3&quot;&gt;SQL Scavenger Hunt: Day 3&lt;/a&gt;&lt;/p&gt;</content><author><name>Bin</name></author><category term="BigQuery" /><summary type="html">Here is the basic steps to use SQL and Python in BigQuery.</summary></entry><entry><title type="html">Troubleshoot HDFS Connection Exception</title><link href="http://localhost:4000/big-data/hadoop-hdfs-connection/" rel="alternate" type="text/html" title="Troubleshoot HDFS Connection Exception" /><published>2018-02-17T20:34:00-08:00</published><updated>2018-02-17T20:34:00-08:00</updated><id>http://localhost:4000/big-data/hadoop-hdfs-connection</id><content type="html" xml:base="http://localhost:4000/big-data/hadoop-hdfs-connection/">&lt;h1 id=&quot;error-message&quot;&gt;Error Message&lt;/h1&gt;
 
 &lt;p&gt;ubuntu@ip-172-31-43-69:~/apps/hadoop$ hadoop fs -ls /
 ls: Call From ip-172-31-43-69.us-west-2.compute.internal/172.31.43.69 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused&lt;/p&gt;
@@ -462,7 +730,7 @@ $hadoop fs -mkdir /user/[username]
       	&lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;/home/ubuntu/apps/hadoop/tmp&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Bin Shi</name></author><category term="hadoop" /><summary type="html">Error Message</summary></entry><entry><title type="html">Understand Idempotence of Reduce Function in MongoDB</title><link href="http://localhost:4000/database/mongodb-mapreduce/" rel="alternate" type="text/html" title="Understand Idempotence of Reduce Function in MongoDB" /><published>2018-02-03T22:32:00-08:00</published><updated>2018-02-03T22:32:00-08:00</updated><id>http://localhost:4000/database/mongodb-mapreduce</id><content type="html" xml:base="http://localhost:4000/database/mongodb-mapreduce/">&lt;p&gt;Here are the characteristics of &lt;strong&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/troubleshoot-reduce-function/#ensure-reduce-function-idempotence&quot;&gt;Reduce Function Idempotence&lt;/a&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Bin</name></author><category term="hadoop" /><summary type="html">Error Message</summary></entry><entry><title type="html">Understand Idempotence of Reduce Function in MongoDB</title><link href="http://localhost:4000/database/mongodb-mapreduce/" rel="alternate" type="text/html" title="Understand Idempotence of Reduce Function in MongoDB" /><published>2018-02-03T22:32:00-08:00</published><updated>2018-02-03T22:32:00-08:00</updated><id>http://localhost:4000/database/mongodb-mapreduce</id><content type="html" xml:base="http://localhost:4000/database/mongodb-mapreduce/">&lt;p&gt;Here are the characteristics of &lt;strong&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/troubleshoot-reduce-function/#ensure-reduce-function-idempotence&quot;&gt;Reduce Function Idempotence&lt;/a&gt;&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;a map-reduce operation may call a &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; multiple times for the same key&lt;/li&gt;
@@ -743,13 +1011,13 @@ $hadoop fs -mkdir /user/[username]
   &lt;li&gt;MongoDB will &lt;strong&gt;not&lt;/strong&gt; call the &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; function for a key that has only a single value. The &lt;code class=&quot;highlighter-rouge&quot;&gt;values&lt;/code&gt;argument is an array whose elements are the &lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt; objects that are “mapped” to the &lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;MongoDB can invoke the &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; function more than once for the same key. In this case, the previous output from the &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; function for that key will become one of the input values to the next &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; function invocation for that key.&lt;/li&gt;
   &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; function can access the variables defined in the &lt;code class=&quot;highlighter-rouge&quot;&gt;scope&lt;/code&gt; parameter.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Bin Shi</name></author><category term="mongodb" /><summary type="html">Here are the characteristics of Reduce Function Idempotence:</summary></entry><entry><title type="html">Got new skills: Spark &amp;amp; Scala</title><link href="http://localhost:4000/learn/spark-scala/" rel="alternate" type="text/html" title="Got new skills: Spark &amp; Scala" /><published>2018-01-29T11:16:00-08:00</published><updated>2018-01-29T11:16:00-08:00</updated><id>http://localhost:4000/learn/spark-scala</id><content type="html" xml:base="http://localhost:4000/learn/spark-scala/">&lt;p&gt;As part of my knowledge base in Big Data, I completed two new certificates in Spark and &lt;a href=&quot;https://en.wikipedia.org/wiki/Scala_(programming_language)&quot;&gt;Scala&lt;/a&gt;. My next step is to practice Kafka and Spark in two real projects, and got familiar with the APIs.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Bin</name></author><category term="mongodb" /><summary type="html">Here are the characteristics of Reduce Function Idempotence:</summary></entry><entry><title type="html">Got new skills: Spark &amp;amp; Scala</title><link href="http://localhost:4000/learn/spark-scala/" rel="alternate" type="text/html" title="Got new skills: Spark &amp; Scala" /><published>2018-01-29T11:16:00-08:00</published><updated>2018-01-29T11:16:00-08:00</updated><id>http://localhost:4000/learn/spark-scala</id><content type="html" xml:base="http://localhost:4000/learn/spark-scala/">&lt;p&gt;As part of my knowledge base in Big Data, I completed two new certificates in Spark and &lt;a href=&quot;https://en.wikipedia.org/wiki/Scala_(programming_language)&quot;&gt;Scala&lt;/a&gt;. My next step is to practice Kafka and Spark in two real projects, and got familiar with the APIs.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/ApacheSparkEssentialTraining_BigDataEngineering_CertificateOfCompletion.jpg&quot; alt=&quot;ApacheSparkEssentialTraining&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/ScalaEssentialTrainingforDataScience_CertificateOfCompletion.jpg&quot; alt=&quot;ScalaEssentialTrainingforDataScience&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;2018-01-29, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><category term="certificate" /><summary type="html">As part of my knowledge base in Big Data, I completed two new certificates in Spark and Scala. My next step is to practice Kafka and Spark in two real projects, and got familiar with the APIs.</summary></entry><entry><title type="html">My Lynda Certificates!</title><link href="http://localhost:4000/learn/lynda-certificates/" rel="alternate" type="text/html" title="My Lynda Certificates!" /><published>2018-01-21T19:14:00-08:00</published><updated>2018-01-21T19:14:00-08:00</updated><id>http://localhost:4000/learn/lynda-certificates</id><content type="html" xml:base="http://localhost:4000/learn/lynda-certificates/">&lt;p&gt;&lt;strong&gt;Utilize Online Learning Resource: Lynda&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2018-01-29, Seattle&lt;/p&gt;</content><author><name>Bin</name></author><category term="certificate" /><summary type="html">As part of my knowledge base in Big Data, I completed two new certificates in Spark and Scala. My next step is to practice Kafka and Spark in two real projects, and got familiar with the APIs.</summary></entry><entry><title type="html">My Lynda Certificates!</title><link href="http://localhost:4000/learn/lynda-certificates/" rel="alternate" type="text/html" title="My Lynda Certificates!" /><published>2018-01-21T19:14:00-08:00</published><updated>2018-01-21T19:14:00-08:00</updated><id>http://localhost:4000/learn/lynda-certificates</id><content type="html" xml:base="http://localhost:4000/learn/lynda-certificates/">&lt;p&gt;&lt;strong&gt;Utilize Online Learning Resource: Lynda&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The university offered this great resource for students to learn online. Why not make use of it?! The overall quality of Lynda courses is great, and I can also earn some certificates and put it in linkedin.&lt;/p&gt;
 
@@ -761,7 +1029,7 @@ $hadoop fs -mkdir /user/[username]
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/iShiBin/ishibin.github.io/master/assets/certificates/LearningPythonGenerators_CertificateOfCompletion.jpg&quot; alt=&quot;LearningPythonGenerators&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;2018-01-21, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><category term="certificate" /><summary type="html">Utilize Online Learning Resource: Lynda</summary></entry><entry><title type="html">Get timestamp in millisecond in python 2</title><link href="http://localhost:4000/get-timestamp-python/" rel="alternate" type="text/html" title="Get timestamp in millisecond in python 2" /><published>2018-01-21T11:05:00-08:00</published><updated>2018-01-21T11:05:00-08:00</updated><id>http://localhost:4000/get-timestamp-python</id><content type="html" xml:base="http://localhost:4000/get-timestamp-python/">&lt;p&gt;Just a quick code snippet to get the millisecond in python.&lt;/p&gt;
+&lt;p&gt;2018-01-21, Seattle&lt;/p&gt;</content><author><name>Bin</name></author><category term="certificate" /><summary type="html">Utilize Online Learning Resource: Lynda</summary></entry><entry><title type="html">Get timestamp in millisecond in python 2</title><link href="http://localhost:4000/get-timestamp-python/" rel="alternate" type="text/html" title="Get timestamp in millisecond in python 2" /><published>2018-01-21T11:05:00-08:00</published><updated>2018-01-21T11:05:00-08:00</updated><id>http://localhost:4000/get-timestamp-python</id><content type="html" xml:base="http://localhost:4000/get-timestamp-python/">&lt;p&gt;Just a quick code snippet to get the millisecond in python.&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# python 2.x&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;calendar&lt;/span&gt;
@@ -775,219 +1043,4 @@ $hadoop fs -mkdir /user/[username]
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;2018-01-21, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">Just a quick code snippet to get the millisecond in python. ```python python 2.x import time import calendar</summary></entry><entry><title type="html">Use `intertools` to solve combination and permutation problems in leetcode</title><link href="http://localhost:4000/itertools-in-leetcode/" rel="alternate" type="text/html" title="Use `intertools` to solve combination and permutation problems in leetcode" /><published>2018-01-17T01:00:00-08:00</published><updated>2018-01-17T01:00:00-08:00</updated><id>http://localhost:4000/itertools-in-leetcode</id><content type="html" xml:base="http://localhost:4000/itertools-in-leetcode/">&lt;p&gt;In python, package &lt;a href=&quot;https://docs.python.org/3/library/itertools.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;itertools&lt;/code&gt;&lt;/a&gt;  is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.&lt;/p&gt;
-
-&lt;h1 id=&quot;quick-look-at-combinatoric-iterators&quot;&gt;Quick Look at &lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations&quot;&gt;Combinatoric Iterators&lt;/a&gt;&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Iterator&lt;/th&gt;
-      &lt;th&gt;Arguments&lt;/th&gt;
-      &lt;th&gt;Results&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.product&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;product()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;p, q, … [repeat=1]&lt;/td&gt;
-      &lt;td&gt;cartesian product, equivalent to a nested for-loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.permutations&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permutations()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;p[, r]&lt;/td&gt;
-      &lt;td&gt;r-length tuples, all possible orderings, no repeated elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;p, r&lt;/td&gt;
-      &lt;td&gt;r-length tuples, in sorted order, no repeated elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations_with_replacement()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;p, r&lt;/td&gt;
-      &lt;td&gt;r-length tuples, in sorted order, with repeated elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;product('ABCD', repeat=2)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permutations('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AB AC AD BA BC BD CA CB CD DA DB DC&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AB AC AD BC BD CD&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;combinations_with_replacement('ABCD', 2)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AA AB AC AD BB BC BD CC CD DD&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;leetcode-problems-and-solutions&quot;&gt;LeetCode Problems and Solutions&lt;/h1&gt;
-
-&lt;h2 id=&quot;combinations&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/combinations/description/&quot;&gt;Combinations&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-
-&lt;p&gt;Given two integers &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;k&lt;/em&gt;, return all possible combinations of &lt;em&gt;k&lt;/em&gt; numbers out of 1 … &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;For example,
-If &lt;em&gt;n&lt;/em&gt; = 4 and &lt;em&gt;k&lt;/em&gt; = 2, a solution is:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
-  [2,4],
-  [3,4],
-  [2,3],
-  [1,2],
-  [1,3],
-  [1,4],
-]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
-
-&lt;p&gt;It likes talored for the &lt;code class=&quot;highlighter-rouge&quot;&gt;itertools.combinations()&lt;/code&gt; function. :laughing:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;combine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-        :type n: int
-        :type k: int
-        :rtype: List[List[int]]
-        &quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;combination-sum-iii&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-iii/description/&quot;&gt;Combination Sum III&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h3 id=&quot;description-1&quot;&gt;Description&lt;/h3&gt;
-
-&lt;p&gt;Find all possible combinations of &lt;strong&gt;*k&lt;/strong&gt;* numbers that add up to a number &lt;strong&gt;*n&lt;/strong&gt;*, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;*Example 1:&lt;/strong&gt;*&lt;/p&gt;
-
-&lt;p&gt;Input:  &lt;strong&gt;&lt;em&gt;k&lt;/em&gt;&lt;/strong&gt; = 3,  &lt;strong&gt;&lt;em&gt;n&lt;/em&gt;&lt;/strong&gt; = 7&lt;/p&gt;
-
-&lt;p&gt;Output:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[1,2,4]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;*Example 2:&lt;/strong&gt;*&lt;/p&gt;
-
-&lt;p&gt;Input:  &lt;strong&gt;&lt;em&gt;k&lt;/em&gt;&lt;/strong&gt; = 3,  &lt;strong&gt;&lt;em&gt;n&lt;/em&gt;&lt;/strong&gt; = 9&lt;/p&gt;
-
-&lt;p&gt;Output:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[1,2,6], [1,3,5], [2,3,4]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;solution-1&quot;&gt;Solution&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;combinationSum3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-        :type k: int
-        :type n: int
-        :rtype: List[List[int]]
-        &quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# n is too small or big&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# form a list of numbers from 1 to 10 (exclusive)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# comprehension&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;return list(e for e in itertools.combinations(nums, k) if sum(e) == n)&lt;/code&gt; will also work but it is a little bit slow that the list comprehension which is used in the provided solution.&lt;/p&gt;
-
-&lt;h2 id=&quot;permutations&quot;&gt;&lt;a href=&quot;https://leetcode.com/problems/permutations/description/&quot;&gt;Permutations&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h3 id=&quot;description-2&quot;&gt;Description&lt;/h3&gt;
-
-&lt;p&gt;Given a collection of &lt;strong&gt;distinct&lt;/strong&gt; numbers, return all possible permutations.&lt;/p&gt;
-
-&lt;p&gt;For example,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;[1,2,3]&lt;/code&gt; have the following permutations:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;solution-2&quot;&gt;Solution&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;permute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        &quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;permutations-ii&quot;&gt;Permutations II&lt;/h2&gt;
-
-&lt;h3 id=&quot;description-3&quot;&gt;Description&lt;/h3&gt;
-
-&lt;p&gt;Given a collection of numbers that might contain duplicates, return all possible unique permutations.&lt;/p&gt;
-
-&lt;p&gt;For example,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;[1,1,2]&lt;/code&gt; have the following unique permutations:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
-  [1,1,2],
-  [1,2,1],
-  [2,1,1]
-]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;solution-3&quot;&gt;Solution&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;permuteUnique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        &quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;itertools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# get rid of duplicates&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;limitation&quot;&gt;Limitation&lt;/h1&gt;
-
-&lt;p&gt;The built-in function is very handy and cool. However, it is always slow to search all the combinations/permutations in a list of numbers. That’s where other algorithms like backtracking come in because it can prune the unnecessary branches when searching. Later, I will introduce the solution to these questions as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum&quot;&gt;Combination Sum&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-ii&quot;&gt;Combination Sum II&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum-iv&quot;&gt;Combination Sum IV&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;2018-01-18, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">In python, package itertools is a very powerful and efficient looping tool. Here are some examples of how to solve some leetcode algorithm problems using this tool.</summary></entry><entry><title type="html">Start small, achieve BIG!</title><link href="http://localhost:4000/start-small-achieve-big/" rel="alternate" type="text/html" title="Start small, achieve BIG!" /><published>2018-01-17T00:00:00-08:00</published><updated>2018-01-17T00:00:00-08:00</updated><id>http://localhost:4000/start-small-achieve-big</id><content type="html" xml:base="http://localhost:4000/start-small-achieve-big/">&lt;p&gt;Many people already know this, but why I mention it again, simply because it is very important and easy to forget.&lt;/p&gt;
-
-&lt;p&gt;Nowadays, people just want to accomplish big and fancy things and tend to ignore the small ones. However, the universal law cannot be ignored that &lt;strong&gt;big achievements start from small&lt;/strong&gt;.  Finishing a marathon starts with a step of running and then the next step.&lt;/p&gt;
-
-&lt;p&gt;Writing a blog (and do not stop) is a big thing but it starts with a simple post. As to me, maybe it starts a feature of a programming language or a simple linear regression model. By keeping learning and practicing days after days, eventually, I will achieve big.&lt;/p&gt;
-
-&lt;p&gt;2018-01-17, Seattle&lt;/p&gt;</content><author><name>Bin Shi</name></author><summary type="html">Many people already know this, but why I mention it again, simply because it is very important and easy to forget.</summary></entry></feed>
+&lt;p&gt;2018-01-21, Seattle&lt;/p&gt;</content><author><name>Bin</name></author><summary type="html">Just a quick code snippet to get the millisecond in python. ```python python 2.x import time import calendar</summary></entry></feed>

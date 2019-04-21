@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "portfolio"
     url: /portfolio/
+#  - title: "certificates"
+#    url: /certificates/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

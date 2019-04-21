@@ -5,8 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 github: [metadata]
+
+remote_theme             : "mmistakes/minimal-mistakes@4.16.0"
 
 # Site Settings
 locale                   : "en-US"
@@ -267,7 +269,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: splash
       author_profile: false
       share: true
 
@@ -276,11 +278,3 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-
-collctions:
-  certificates:
-    output: true
-    premalink: /:collection/:path/
-
-remote_theme: "mmistakes/minimal-mistakes@4.16.0"
-
