@@ -277,4 +277,5 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.16.0"
+
