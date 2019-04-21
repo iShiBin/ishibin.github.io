@@ -1,25 +1,23 @@
 ---
 permalink: /about/
-title: "About me and this website"
-toc: true
+title: "about me"
 ---
 
-## Short Version
+With passion on data enginering and science filed, I am obsessed with building data systems to collect, ingest and store data, and get value from data using machine learning technologies. 
 
-- learning software & data technologies
-- former software engineer in Oracle and Sony
-- i love reading, travel & photography
-- this website is about my learning & projects
+I write technical articles occasionally on this website, which also has some of my highlighted projects in the portfolio.
 
-## Long Version
-### Profession
-I am studying Information Management at Northeastern University in Seattle from 2017 to 2019. Before, I was a software engineer in Oracle, and then a tech lead in Sony for 9+ years in total.
+**Skills**
 
-My prospective profession is to be a data engineer/scientist after graduation in May 2019. So I will show some of my school/side projects on this website, including some technical articles related to `java`, `python`, `web-design`, `database`, `cloud computing`, `big data` and `data science`.
+- Big Data: Spark, Hadoop, Kafka, Hive, AWS EMR
+- Database: Elasticsearch, Redshift, MySQL, Oracle (Certified DBA), MongoDB, DynamoDB, PostgreSQL
+- Cloud Computing: AWS EC2, S3, Athena, Lambda, API Gateway, SQS, ELB, Elastic Beanstalk
+- Machine learning: Scikit-learn, Spark MLlib
+- Programming: Python, Java, Scala, SQL (Oracle Certified Expert), JavaScript
+- Others: Linux (Professional Institute Certified), Ansible
 
-If you would like to know more about my profession, please check [my cv](https://www.linkedin.com/in/binshi/).
+**Interests**
 
-### Interests
-Mindfulness and productivity are my interests. I am still on my way to practice and build my own methodology.
+Mindfulness and productivity are my interests.  Still practicing andon my the way to build my own methodology. In addition, I reading, travel, and photography.
 
-My other hobbies include reading, travel, and photography. I will keep writing notes and articles (mostly in Chinese) on [my life blog](http://shibin.info).
+To know me more, check [my linkedin profile](https://www.linkedin.com/in/binshi/).
