@@ -2,11 +2,11 @@
 layout: splash
 title: "Highlighed Projects"
 permalink: /portfolio/
-author_profile: false
+author_profile: true
 ---
 
 <div class="grid__wrapper">
   {% for post in site.portfolio %}
-    {% include splash.html type="grid" %}
+    {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
