@@ -277,5 +277,10 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+collctions:
+  certificates:
+    output: true
+    premalink: /:collection/:path/
+
 remote_theme: "mmistakes/minimal-mistakes@4.16.0"
 
